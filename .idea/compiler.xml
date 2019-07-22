@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="polymerization_common" />
+        <module name="polymerization_config" />
+        <module name="polymerization_consul" />
+        <module name="polymerization_eureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="polymerization_common" target="1.8" />
+      <module name="polymerization_config" target="1.8" />
+      <module name="polymerization_consul" target="1.8" />
+      <module name="polymerization_eureka" target="1.8" />
+      <module name="polymerization_parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

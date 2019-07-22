@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://localhost:1001/
+      fail-fast: true
+  application:
+    name: spring-cloud-config-consul

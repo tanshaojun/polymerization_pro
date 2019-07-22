@@ -7,6 +7,7 @@
         <module>polymerization_eureka</module>
         <module>polymerization_config</module>
         <module>polymerization_common</module>
+        <module>polymerization_consul</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -34,6 +35,17 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-consul</artifactId>
+                <version>2.2.0.BUILD-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>2.1.6.RELEASE</version>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>

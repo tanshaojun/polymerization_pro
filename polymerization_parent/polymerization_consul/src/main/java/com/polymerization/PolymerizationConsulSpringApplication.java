@@ -3,7 +3,8 @@ package com.polymerization;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author tanshaojun
@@ -11,11 +12,16 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @date 2019/7/22 15:07
  */
 @SpringBootApplication
-@EnableConfigServer
 @EnableDiscoveryClient
-public class PolymerizationConfigSpringApplication {
+@RestController
+public class PolymerizationConsulSpringApplication {
     public static void main(String[] args) {
-        SpringApplication.run(PolymerizationConfigSpringApplication.class, args);
+        SpringApplication.run(PolymerizationConsulSpringApplication.class, args);
+    }
+
+    @RequestMapping("/")
+    public String home() {
+        return "Hello World";
     }
 
 }
