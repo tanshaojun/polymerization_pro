@@ -11,10 +11,12 @@
 
     <artifactId>polymerization_config</artifactId>
     <dependencies>
+        <!--配置中心服务端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
+        <!--consul注册中心-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>

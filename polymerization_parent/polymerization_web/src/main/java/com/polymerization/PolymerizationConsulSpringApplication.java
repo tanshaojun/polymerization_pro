@@ -13,15 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@RestController
 public class PolymerizationConsulSpringApplication {
     public static void main(String[] args) {
         SpringApplication.run(PolymerizationConsulSpringApplication.class, args);
-    }
-
-    @RequestMapping("/")
-    public String home() {
-        return "Hello World";
     }
 
 }
