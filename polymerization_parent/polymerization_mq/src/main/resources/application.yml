@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    password: guest
+    username: guest
+    port: 5672
+    addresses: 127.0.0.1
+    listener:
+      simple:
+      #消息确认机制
+      #AcknowledgeMode.NONE 不确认
+      #AcknowledgeMode.AUTO 自动确认
+      #AcknowledgeMode.MANUAL 手动确认
+        acknowledge-mode: manual
+    #消息回调使用
+    publisher-confirms: true
+    publisher-returns: true
+  application:
+    name: rabbit-server
+server:
+  port: 4001
