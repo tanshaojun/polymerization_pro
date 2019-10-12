@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_common/polymerization_common.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_common/polymerization_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_config/polymerization_config.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_config/polymerization_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka/polymerization_eureka.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka/polymerization_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_mq/polymerization_mq.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_mq/polymerization_mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_parent.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/polymerization_pro.iml" filepath="$PROJECT_DIR$/.idea/polymerization_pro.iml" />
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_web/polymerization_web.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_web/polymerization_web.iml" />

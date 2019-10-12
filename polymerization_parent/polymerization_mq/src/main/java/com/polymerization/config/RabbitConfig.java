@@ -1,17 +1,16 @@
 package com.polymerization.config;
 
-import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
+import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.FanoutExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.core.TopicExchange;
-import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
-import org.springframework.amqp.rabbit.connection.ConnectionFactory;
-import org.springframework.amqp.rabbit.listener.RabbitListenerContainerFactory;
-import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 交换器的几种模式：
@@ -134,4 +133,64 @@ public class RabbitConfig {
         return BindingBuilder.bind(topicCQueue()).to(topicExchange()).with("topic.#");
     }
     //-------------------------------------topic模式end-------------------------------------
+
+
+    //-------------------------------------死信队列start-------------------------------------
+
+    @Bean
+    public Queue dlxQueue() {
+        return new Queue("dlx.queue");
+    }
+
+    @Bean
+    public DirectExchange dlxExchange() {
+        return new DirectExchange("dlxExchange");
+    }
+
+    @Bean
+    public Binding dlxBinding() {
+        return BindingBuilder.bind(dlxQueue())
+                .to(dlxExchange())
+                .with("dlx");
+    }
+
+
+    /**
+     * @apiNote 死信测试队列
+     */
+    @Bean
+    public Queue dlxTestQueue() {
+        Map<String, Object> arguments = new HashMap<>(2);
+        // 绑定该队列到私信交换机
+        arguments.put("x-dead-letter-exchange", "dlxExchange");
+        arguments.put("x-dead-letter-routing-key", "dlx");
+        return new Queue("test.dlx.queue", true, false, false, arguments);
+    }
+
+
+    /**
+     * 死信测试交换机
+     *
+     * @return
+     */
+    @Bean
+    public DirectExchange dlxTestExchange() {
+        return new DirectExchange("dlxTestExchange");
+    }
+
+    /**
+     * 死信测试绑定
+     *
+     * @return
+     */
+    @Bean
+    public Binding blxTestBinding() {
+        return BindingBuilder.bind(dlxTestQueue())
+                .to(dlxTestExchange())
+                .with("dlxTest");
+    }
+
+    //-------------------------------------死信队列end-------------------------------------
+
+
 }

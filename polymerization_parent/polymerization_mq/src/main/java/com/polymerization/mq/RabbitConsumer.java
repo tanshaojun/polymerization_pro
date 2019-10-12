@@ -117,4 +117,28 @@ public class RabbitConsumer {
         logger.info("topicCRecieved message c:{}", msg);
     }
 
+
+    @RabbitHandler
+    @RabbitListener(queues = "dlx.queue")
+    public void dlxRecieved(String msg, Channel channel, Message message) {
+        logger.info("dlxRecieved message c:{}", msg);
+        try {
+            channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @RabbitHandler
+    @RabbitListener(queues = "test.dlx.queue")
+    public void testDlxRecieved(String msg, Channel channel, Message message) {
+        logger.info("testDlxRecieved message c:{}", msg);
+        try {
+            //不确认消息，则消息进入死信队列
+            channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

@@ -3,6 +3,7 @@ package com.polymerization.mq;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageDeliveryMode;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -55,4 +56,18 @@ public class RabbitProducer {
         this.rabbitTemplate.convertAndSend("topicExchange", routingKey, "topicExchange hello world");
     }
 
+
+    /**
+     * 死信队列测试
+     *
+     * @param routingKey
+     */
+    public void dlxTestExchangeSend(String routingKey) {
+        this.rabbitTemplate.convertAndSend("dlxTestExchange", routingKey,
+                "hello test dxl queue", message -> {
+                    message.getMessageProperties().setDeliveryMode(MessageDeliveryMode.PERSISTENT);
+                    message.getMessageProperties().setExpiration("10000");
+                    return message;
+                });
+    }
 }

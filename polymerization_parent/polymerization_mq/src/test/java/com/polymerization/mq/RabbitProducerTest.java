@@ -54,4 +54,12 @@ public class RabbitProducerTest {
          */
         producer.topicExchangeSend("topic.test.msg");
     }
+
+    /**
+     * 死信测试
+     */
+    @Test
+    public void dlxTestExchangeSend() {
+        producer.dlxTestExchangeSend("dlxTest");
+    }
 }
