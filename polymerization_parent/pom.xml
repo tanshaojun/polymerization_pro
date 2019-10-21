@@ -9,6 +9,7 @@
         <module>polymerization_common</module>
         <module>polymerization_web</module>
         <module>polymerization_mq</module>
+        <module>polymerization_gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
