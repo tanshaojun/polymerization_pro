@@ -1,7 +1,6 @@
 package com.polymerization.mq;
 
 import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.MessageProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Message;

@@ -15,6 +15,10 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      filter:
+        remove-hop-by-hop:
+          headers:
+            - dummy
       routes:
         - id: consul-server-dev  #请求 http://localhost:4001/api/test会转发到http://localhost:3001/*服务，
           uri: http://localhost:3001
@@ -27,3 +31,6 @@ management:
   endpoint:
     health:
       show-details: always
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
