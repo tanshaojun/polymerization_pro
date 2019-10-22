@@ -10,23 +10,23 @@ spring:
       discovery:
         health-check-path: /actuator/health
         health-check-interval: 10s
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
-      filter:
-        remove-hop-by-hop:
-          headers:
-            - dummy
-      routes:
-        - id: consul-server-dev  #请求 http://localhost:4001/api/test会转发到http://localhost:3001/*服务，
-          uri: http://localhost:3001
-#          uri: lb://consul-server-dev
-          predicates:
-            - Path=/api/*
-          filters:
-            - StripPrefix=1
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+#      filter:
+#        remove-hop-by-hop:
+#          headers:
+#            - dummy
+#      routes:
+#        - id: consul-server-dev  #请求 http://localhost:4001/api/test会转发到http://localhost:3001/*服务，
+#          uri: http://localhost:3001
+##          uri: lb://consul-server-dev
+#          predicates:
+#            - Path=/api/*
+#          filters:
+#            - StripPrefix=1
 management:
   endpoint:
     health:
