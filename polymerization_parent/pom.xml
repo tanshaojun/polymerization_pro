@@ -11,6 +11,7 @@
         <module>polymerization_mq</module>
         <module>polymerization_gateway</module>
         <module>polymerization_provider</module>
+        <module>polymerization_provider_two</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

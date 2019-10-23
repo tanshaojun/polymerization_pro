@@ -14,7 +14,7 @@ public class TestController {
 
     @RequestMapping("/home")
     public String home() {
-        return "hello world 6001";
+        return "hello world 6002";
     }
 
 }
