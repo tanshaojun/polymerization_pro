@@ -13,6 +13,7 @@
         <module name="polymerization_gateway" />
         <module name="polymerization_geteway" />
         <module name="polymerization_mq" />
+        <module name="polymerization_provider" />
         <module name="polymerization_web" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="polymerization_geteway" target="1.8" />
       <module name="polymerization_mq" target="1.8" />
       <module name="polymerization_parent" target="1.8" />
+      <module name="polymerization_provider" target="1.8" />
       <module name="polymerization_web" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,76 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=Hongkong&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+  profiles: dev
+  application:
+    name: consul-server-dev
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+server:
+  port: 3001
+mybatis:
+  mapper-locations: classpath*:com/polymerization/module/**/mapper/*Mapper.xml
+  type-aliases-package: com.polymerization.module.*.mapper
+#feign 请求与响应的压缩
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+# 禁用http 启用okhttp
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+# feign启用hystrix，才能熔断、降级
+  hystrix:
+    enabled: true
+#hystrix.command.default.execution.timeout.enabled=true
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=10000
+---
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=Hongkong&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+  profiles: test
+  application:
+    name: consul-server-test
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+server:
+  port: 3002
+mybatis:
+  mapper-locations: classpath*:com/polymerization/module/**/mapper/*Mapper.xml
+  type-aliases-package: com.polymerization.module.*.mapper
+#feign 请求与响应的压缩
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+# 禁用http 启用okhttp
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+# feign启用hystrix，才能熔断、降级
+  hystrix:
+    enabled: true

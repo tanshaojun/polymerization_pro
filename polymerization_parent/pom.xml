@@ -10,6 +10,7 @@
         <module>polymerization_web</module>
         <module>polymerization_mq</module>
         <module>polymerization_gateway</module>
+        <module>polymerization_provider</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

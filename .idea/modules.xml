@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_mq/polymerization_mq.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_mq/polymerization_mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_parent.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/polymerization_pro.iml" filepath="$PROJECT_DIR$/.idea/polymerization_pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_provider/polymerization_provider.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_provider/polymerization_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/polymerization_parent/polymerization_web/polymerization_web.iml" filepath="$PROJECT_DIR$/polymerization_parent/polymerization_web/polymerization_web.iml" />
     </modules>
   </component>

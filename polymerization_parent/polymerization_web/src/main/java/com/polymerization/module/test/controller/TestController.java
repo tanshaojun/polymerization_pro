@@ -1,5 +1,6 @@
 package com.polymerization.module.test.controller;
 
+import com.polymerization.feign.ProviderFeignService;
 import com.polymerization.module.test.model.Test;
 import com.polymerization.module.test.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,5 +34,13 @@ public class TestController {
     @RequestMapping("/findAll")
     public List<Test> findAll() {
         return testService.findAll();
+    }
+
+    @Autowired
+    private ProviderFeignService providerFeginService;
+
+    @RequestMapping("/testFegin")
+    public String testFegin() {
+        return providerFeginService.home();
     }
 }
