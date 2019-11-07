@@ -9,6 +9,7 @@
         <module name="polymerization_common" />
         <module name="polymerization_config" />
         <module name="polymerization_consul" />
+        <module name="polymerization_es" />
         <module name="polymerization_eureka" />
         <module name="polymerization_gateway" />
         <module name="polymerization_geteway" />
@@ -22,6 +23,7 @@
       <module name="polymerization_common" target="1.8" />
       <module name="polymerization_config" target="1.8" />
       <module name="polymerization_consul" target="1.8" />
+      <module name="polymerization_es" target="1.8" />
       <module name="polymerization_eureka" target="1.8" />
       <module name="polymerization_gateway" target="1.8" />
       <module name="polymerization_geteway" target="1.8" />
