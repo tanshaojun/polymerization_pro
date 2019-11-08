@@ -43,8 +43,9 @@ public class ElCcontroller {
                 e.printStackTrace();
             }
         }
-        List<Map<String, Object>> list = ElasticsearchUtils.searchListData(INDEX, TYPE, 1024, "","");
-        return JSONObject.toJSONString(list);
+        EsPage esPage = ElasticsearchUtils.searchDataPage(INDEX, TYPE, 0, 1, 0, 0, "", "", false,
+                "key", "key=*3*");
+        return JSONObject.toJSONString(esPage);
     }
 
     /**

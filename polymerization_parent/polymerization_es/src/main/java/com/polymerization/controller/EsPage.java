@@ -13,18 +13,36 @@ import java.util.Map;
  */
 @Data
 public class EsPage {
-    // 指定的或是页面参数
-    private int currentPage; // 当前页
-    private int pageSize; // 每页显示多少条
+    /**
+     * 当前页
+     */
+    private int currentPage;
+    /**
+     * 每页显示多少条
+     */
+    private int pageSize;
+    /**
+     * 总记录数
+     */
+    private int recordCount;
+    /**
+     * 本页的数据列表
+     */
+    private List<Map<String, Object>> recordList;
 
-    // 查询es结果
-    private int recordCount; // 总记录数
-    private List<Map<String, Object>> recordList; // 本页的数据列表
 
-    // 计算
-    private int pageCount; // 总页数
-    private int beginPageIndex; // 页码列表的开始索引（包含）
-    private int endPageIndex; // 页码列表的结束索引（包含）
+    /**
+     * 总页数
+     */
+    private int pageCount;
+    /**
+     * 页码列表的开始索引（包含）
+     */
+    private int beginPageIndex;
+    /**
+     * 页码列表的结束索引（包含）
+     */
+    private int endPageIndex;
 
     /**
      * 只接受前4个必要的属性，会自动的计算出其他3个属性的值
