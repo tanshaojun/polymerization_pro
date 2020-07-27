@@ -13,6 +13,12 @@
         <module>polymerization_provider</module>
         <module>polymerization_provider_two</module>
         <module>polymerization_es</module>
+        <module>polymerization_eureka_3001</module>
+        <module>polymerization_eureka_3002</module>
+        <module>polymerization_eureka_web_3009</module>
+        <module>polymerization_eureka_provider_3008</module>
+        <module>polymerization_eureka_provider_3007</module>
+        <module>polymerization_eureka_openfeign_web_4001</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
