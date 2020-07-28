@@ -11,6 +11,14 @@
         <module name="polymerization_consul" />
         <module name="polymerization_es" />
         <module name="polymerization_eureka" />
+        <module name="polymerization_eureka_3001" />
+        <module name="polymerization_eureka_3002" />
+        <module name="polymerization_eureka_hystrix_provider_3006" />
+        <module name="polymerization_eureka_openfeign_hystrix_web_4002" />
+        <module name="polymerization_eureka_openfeign_web_4001" />
+        <module name="polymerization_eureka_provider_3007" />
+        <module name="polymerization_eureka_provider_3008" />
+        <module name="polymerization_eureka_web_3009" />
         <module name="polymerization_gateway" />
         <module name="polymerization_geteway" />
         <module name="polymerization_mq" />
@@ -25,6 +33,14 @@
       <module name="polymerization_consul" target="1.8" />
       <module name="polymerization_es" target="1.8" />
       <module name="polymerization_eureka" target="1.8" />
+      <module name="polymerization_eureka_3001" target="1.8" />
+      <module name="polymerization_eureka_3002" target="1.8" />
+      <module name="polymerization_eureka_hystrix_provider_3006" target="1.8" />
+      <module name="polymerization_eureka_openfeign_hystrix_web_4002" target="1.8" />
+      <module name="polymerization_eureka_openfeign_web_4001" target="1.8" />
+      <module name="polymerization_eureka_provider_3007" target="1.8" />
+      <module name="polymerization_eureka_provider_3008" target="1.8" />
+      <module name="polymerization_eureka_web_3009" target="1.8" />
       <module name="polymerization_gateway" target="1.8" />
       <module name="polymerization_geteway" target="1.8" />
       <module name="polymerization_mq" target="1.8" />

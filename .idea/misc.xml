@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/polymerization_parent/pom.xml" />
         <option value="$PROJECT_DIR$/polymerization_parent/polymerization_gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_3001/pom.xml" />
       </list>
     </option>
   </component>

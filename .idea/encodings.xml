@@ -6,6 +6,14 @@
     <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_es" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_3001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_3002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_hystrix_provider_3006" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_web_4001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_provider_3007" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_provider_3008" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_web_3009" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_mq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/polymerization_parent/polymerization_provider" charset="UTF-8" />

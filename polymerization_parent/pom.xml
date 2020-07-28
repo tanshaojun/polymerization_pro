@@ -19,6 +19,8 @@
         <module>polymerization_eureka_provider_3008</module>
         <module>polymerization_eureka_provider_3007</module>
         <module>polymerization_eureka_openfeign_web_4001</module>
+        <module>polymerization_eureka_hystrix_provider_3006</module>
+        <module>polymerization_eureka_openfeign_hystrix_web_4002</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
