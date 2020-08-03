@@ -4,4 +4,4 @@ elasticsearch:
   ip: 127.0.0.1
   port: 9300
   pool: 1
-  name: elasticsearch
+  name: docker-cluster

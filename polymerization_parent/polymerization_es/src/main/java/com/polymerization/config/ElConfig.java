@@ -52,7 +52,7 @@ public class ElConfig {
             Settings esSetting = Settings.builder()
                     .put("cluster.name", clusterName)
                     //增加嗅探机制，找到ES集群
-                    .put("client.transport.sniff", true)
+                    .put("client.transport.sniff", false)
                     //增加线程池个数为1
                     .put("thread_pool.search.size", Integer.parseInt(poolSize))
                     .build();

@@ -7,11 +7,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.elasticsearch.action.admin.indices.analyze.AnalyzeRequest;
 import org.elasticsearch.action.admin.indices.analyze.AnalyzeResponse;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
-import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsRequest;
 import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse;
 import org.elasticsearch.action.admin.indices.mapping.put.PutMappingRequest;
-import org.elasticsearch.action.admin.indices.mapping.put.PutMappingResponse;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.get.GetRequestBuilder;
 import org.elasticsearch.action.get.GetResponse;
@@ -19,6 +17,7 @@ import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
+import org.elasticsearch.action.support.master.AcknowledgedResponse;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.Requests;
@@ -103,9 +102,9 @@ public class ElasticsearchUtils {
                 .endObject();
 
         PutMappingRequest mapping1 = Requests.putMappingRequest(index).type(type).source(mapping);
-        PutMappingResponse putMappingResponse = client.admin().indices().putMapping(mapping1).actionGet();
-        log.info("添加分词成功？{}", putMappingResponse.isAcknowledged());
-        return putMappingResponse.isAcknowledged();
+        AcknowledgedResponse acknowledgedResponse = client.admin().indices().putMapping(mapping1).actionGet();
+        log.info("添加分词成功？{}", acknowledgedResponse.isAcknowledged());
+        return acknowledgedResponse.isAcknowledged();
     }
 
     /**
@@ -118,13 +117,13 @@ public class ElasticsearchUtils {
         if (!isIndexExist(index)) {
             log.info("Index is not exits!");
         }
-        DeleteIndexResponse dResponse = client.admin().indices().prepareDelete(index).execute().actionGet();
-        if (dResponse.isAcknowledged()) {
+        AcknowledgedResponse acknowledgedResponse = client.admin().indices().prepareDelete(index).execute().actionGet();
+        if (acknowledgedResponse.isAcknowledged()) {
             log.info("delete index {} successfully!", index);
         } else {
             log.info("Fail to delete index {}", index);
         }
-        return dResponse.isAcknowledged();
+        return acknowledgedResponse.isAcknowledged();
     }
 
     /**
