@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4206b1bc-bd94-47d4-8e1d-98764404e557" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_hystrix_provider_3006/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_hystrix_provider_3006/src/main/java/polymerization/PolymerizationEurekaHystrixProvider3006SpringApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_hystrix_provider_3006/src/main/java/polymerization/module/test/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_hystrix_provider_3006/src/main/java/polymerization/module/test/serivce/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_hystrix_provider_3006/src/main/java/polymerization/module/test/serivce/impl/TestServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_hystrix_provider_3006/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/src/main/java/polymerization/PolymerizationEurekaOpenFeignHystrixWeb4002SpringApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/src/main/java/polymerization/config/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/src/main/java/polymerization/module/test/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/src/main/java/polymerization/module/test/service/TestOpenFeignService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_web_4001/src/main/java/polymerization/config/FeignConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_web_4001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_web_4001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polymerization_parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/polymerization_parent/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4206b1bc-bd94-47d4-8e1d-98764404e557" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/polymerization_parent/polymerization_config/target/" />
     <ignored path="$PROJECT_DIR$/polymerization_parent/polymerization_common/target/" />
     <ignored path="$PROJECT_DIR$/polymerization_parent/polymerization_eureka/target/" />
@@ -48,7 +32,7 @@
     <session id="1742369733">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.5" value="2" />
@@ -97,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/src/main/java/polymerization/PolymerizationEurekaOpenFeignHystrixWeb4002SpringApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="176">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -387,7 +371,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595920557682" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595920561743" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/polymerization_parent/polymerization_eureka_3001/pom.xml" />
@@ -704,7 +688,7 @@
       <workItem from="1595837530607" duration="212000" />
       <workItem from="1595843725338" duration="20000" />
       <workItem from="1595843901900" duration="207000" />
-      <workItem from="1595902883015" duration="14747000" />
+      <workItem from="1595902883015" duration="15031000" />
     </task>
     <servers />
   </component>
@@ -741,7 +725,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110086000" />
+    <option name="totallyTimeSpent" value="110370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1210,8 +1194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/polymerization_parent/polymerization_eureka_openfeign_hystrix_web_4002/src/main/java/polymerization/PolymerizationEurekaOpenFeignHystrixWeb4002SpringApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="176">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
